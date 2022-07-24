@@ -10,7 +10,7 @@
 import Jumbutoron from './JumbotronView.vue';
 import FeaturedTours from './FeaturedTours.vue';
 import PopularDestination from './PopularDestination.vue';
-import BookingProcess from './BookingProcess.vue';
+import BookingProcess from './EventsView.vue';
 import FooterView from './FooterView.vue';
 export default {
   name: 'HelloWorld',

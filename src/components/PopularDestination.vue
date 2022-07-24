@@ -13,6 +13,7 @@
         pb-16 
         md:grid-rows-1
         md:grid-cols-1
+        sm:grid-cols-1
         "
         >
         <div 
@@ -23,6 +24,8 @@
           md:py-4
           md:col-span-1
           sm:col-span-1
+          msm:col-span-1
+          sm:gap-1
           " data-aos="fade-up">
           <img src="../assets/batanes7.jpg" class="rounded-lg " />
         </div>
@@ -30,11 +33,12 @@
           lg:grid-rows-2 
           lg:gap-4
           md:grid-rows-1
-          md:py-4
-          sm:py-4
+          md:py-1
+          sm:py-1
+          msm:py-1
           " data-aos="fade-up">
           <div>
-            <img src="../assets/batanes6.jpg " class="rounded-lg"/>
+            <img src="../assets/batanes6.jpg " class="rounded-lg sm:pb-1 msm:pb-1"/>
           </div>
           <div>
             <img src="../assets/batanes8.jpg " class="rounded-lg"/>
@@ -44,27 +48,21 @@
           lg:grid-rows-2 
           lg:gap-4
           md:grid-rows-1
-          md:py-4
-          sm:py-4"
+          md:pb-1
+          sm:pb-1
+          msm:pb-1
+          "
           data-aos="fade-up">
           <div>
-            <img src="../assets/batanes10.jpg " class="rounded-lg "/>
+            <img src="../assets/batanes10.jpg " class="rounded-lg sm:pb-1 msm:pb-1"/>
           </div>
           <div>
             <img src="../assets/batanes9.jpg " class="rounded-lg "/>
           </div>
         </div>
       </div>
-      <CarouselComponent class="carousel lg:hidden sm:block md:block" v-slot="{currentSlide}">
-        <SlideComponent v-for="(slide, index) in carouselSlides" :key="index">
-          <div v-show="currentSlide === index+1" class="slide-info">
-            <img :src="require(`../assets/${slide}.jpg`)" />
-          </div>
-        </SlideComponent>
-      </CarouselComponent>
     </div>
   </div>
-  
 </template>
 
 <script>
@@ -79,13 +77,6 @@ export default {
   created() {
     AOS.init();
   },
-  setup() {
-    const carouselSlides = ['batanes10', 'batanes9', 'batanes8']
-
-    return {
-      carouselSlides
-    }
-  }
 }
 </script>
 

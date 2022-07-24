@@ -1,13 +1,15 @@
 <template>
-  <div class="featured-tours flex flex-col items-center pb-28">
-    <h1 class="uppercase text-2xl">Explore your catergory</h1>
+  <div class="featured-tours  pb-28">
+    <h1 class="uppercase text-2xl text-center">Explore your catergory</h1>
     <h1 class="
       font-bold 
       text-5xl 
       uppercase
       xs:text-center
       sm:text-center
+      md:text-center
       sm:pb-10
+      lg:text-center
       ">Featured Tours</h1>
     <div 
       data-aos="fade-up"
@@ -20,9 +22,12 @@
         md:space-x-0
         sm:space-x-0
         justify-center
+        sm:space-x-1
+        msm:space-x-1
+        items-center
         ">
       <CardList 
-        class="mt-7 "
+        class="mt-7"
         v-for="destination in destinations" 
         :key="destination" 
         :src="destination.img"
@@ -57,7 +62,7 @@ export default {
           id: "1",
           name: "Amboy Hometel Travel Tours & Services",
           price: "5500/Person",
-          img: "batanes7.jpg",
+          img: "batanes6.jpg",
           location: "San Antonio, Basco",
           inclusions: [
             "2 days tour",
@@ -73,7 +78,7 @@ export default {
           id: "2",
           name: "Chanpan Travel & Tours",
           price: "4500/Person",
-          img: "batanes2.jpg",
+          img: "batanes7.jpg",
           location: "Itbud, Uyugan",
            inclusions: [
             "2 days tour",
@@ -89,7 +94,7 @@ export default {
           id: "3",
           name: "Fountain of Youth",
           price: "5000/Person",
-          img: "batanes4.jpg",
+          img: "batanes9.jpg",
           location: "Diura, Mahatao",
            inclusions: [
             "2 days tour",

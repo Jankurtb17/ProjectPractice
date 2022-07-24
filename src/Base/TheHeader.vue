@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-transparent md:px-12 h-24 w-full">
+  <header class="bg-transparent md:px-12 h-24 w-full sm:bg-red-400 msm:bg-red-400 sm:px-2 sm:h-20">
     <nav class="flex justify-between items-center xl:container xl:mx-auto sm:p-4 py-4 sm:py-7">
       <!-- Container -->
       <h1 class="text-2xl text-white uppercase font-bold">Batanes</h1>
@@ -28,6 +28,7 @@
         sm:bg-gray-50
         sm:overflow-x-hidden
         msm:overflow-x-hidden
+        
         "
         :class="menu"
         >
