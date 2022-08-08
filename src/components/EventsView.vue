@@ -1,7 +1,7 @@
 <template>
   <div >
-    <div class="container mx-auto">
-      <div class="text-center py-16 ">
+    <div class="container mx-auto pb-20">
+      <div class="text-center py-16">
         <h1 class="text-5xl uppercase font-bold text-black">Events</h1>
       </div>
       <div v-for="event in events" :key="event">
